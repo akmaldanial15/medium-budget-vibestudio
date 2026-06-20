@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View the portfolio of Vibe Studio. A curated collection of Japandi living rooms, minimal kitchens, quiet bedrooms, and inspiring home offices.">
+  <title>Portfolio | Vibe Interior Studio</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo">VIBE<span>STUDIO</span></a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="section-subtitle">Selected Work</span>
+      <h1 class="section-title" style="margin-bottom: 0;">Our Design Portfolio</h1>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Category Filters -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="living">Living Room</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        
+        <!-- Item 1 - Living -->
+        <div class="portfolio-item" data-category="living" data-title="The Alabaster Loft" data-description="A bright, cozy living room using warm neutrals, bouclé fabrics, and clean white oak details.">
+          <img src="assets/images/living-1.png" alt="The Alabaster Loft">
+          <div class="portfolio-item-overlay">
+            <h3>The Alabaster Loft</h3>
+            <p>Living Room</p>
+          </div>
+        </div>
+
+        <!-- Item 2 - Kitchen -->
+        <div class="portfolio-item" data-category="kitchen" data-title="Warm Oak Culinary Studio" data-description="A luxury kitchen design highlighting white marble surfaces, walnut cabinets, and concealed ambient lighting.">
+          <img src="assets/images/kitchen-1.png" alt="Warm Oak Culinary Studio">
+          <div class="portfolio-item-overlay">
+            <h3>Warm Oak Culinary Studio</h3>
+            <p>Kitchen</p>
+          </div>
+        </div>
+
+        <!-- Item 3 - Bedroom -->
+        <div class="portfolio-item" data-category="bedroom" data-title="Linen &amp; Oak Sanctuary" data-description="A serene bedroom highlighting Japanese low-profile sleeping layout, linen bedding, and soft indirect warm lighting.">
+          <img src="assets/images/bedroom-1.png" alt="Linen &amp; Oak Sanctuary">
+          <div class="portfolio-item-overlay">
+            <h3>Linen &amp; Oak Sanctuary</h3>
+            <p>Bedroom</p>
+          </div>
+        </div>
+
+        <!-- Item 4 - Office -->
+        <div class="portfolio-item" data-category="office" data-title="Mont Kiara Creative Workspace" data-description="An inspiring home office integrating floating oak shelving, ergonomic curvature, and plant-filled ambient surroundings.">
+          <img src="assets/images/office-1.png" alt="Mont Kiara Creative Workspace">
+          <div class="portfolio-item-overlay">
+            <h3>Mont Kiara Workspace</h3>
+            <p>Office</p>
+          </div>
+        </div>
+
+        <!-- Item 5 - Living (Using hero image) -->
+        <div class="portfolio-item" data-category="living" data-title="Japandi Lounge &amp; Nook" data-description="An expansive lounge showcasing low-height seating, textured plaster walls, and custom bespoke travertine tables.">
+          <img src="assets/images/hero.png" alt="Japandi Lounge &amp; Nook">
+          <div class="portfolio-item-overlay">
+            <h3>Japandi Lounge &amp; Nook</h3>
+            <p>Living Room</p>
+          </div>
+        </div>
+
+        <!-- Item 6 - Kitchen (Alternate view) -->
+        <div class="portfolio-item" data-category="kitchen" data-title="The Culinary Sanctuary" data-description="Detail shot of stone carving and minimalist integration of luxury modern appliances.">
+          <img src="assets/images/kitchen-1.png" alt="The Culinary Sanctuary" style="filter: brightness(0.95) contrast(1.05);">
+          <div class="portfolio-item-overlay">
+            <h3>The Culinary Sanctuary</h3>
+            <p>Kitchen</p>
+          </div>
+        </div>
+
+        <!-- Item 7 - Bedroom (Alternate view) -->
+        <div class="portfolio-item" data-category="bedroom" data-title="Linen Bed Chamber" data-description="Custom linen drapery and soft textures designed for absolute nocturnal rest.">
+          <img src="assets/images/bedroom-1.png" alt="Linen Bed Chamber" style="filter: sepia(0.05) brightness(0.97);">
+          <div class="portfolio-item-overlay">
+            <h3>Linen Bed Chamber</h3>
+            <p>Bedroom</p>
+          </div>
+        </div>
+
+        <!-- Item 8 - Office (Alternate view) -->
+        <div class="portfolio-item" data-category="office" data-title="The Study Room" data-description="A workspace designed to foster deep work, utilizing natural materials and glare-free layouts.">
+          <img src="assets/images/office-1.png" alt="The Study Room" style="filter: contrast(0.95) saturate(0.9);">
+          <div class="portfolio-item-overlay">
+            <h3>The Study Room</h3>
+            <p>Office</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-close" id="lightbox-close">&times;</div>
+    <div class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10218;</div>
+    <div class="lightbox-nav lightbox-next" id="lightbox-next">&#10219;</div>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">
+        <h3 id="lightbox-title">Project Title</h3>
+        <p id="lightbox-desc" style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 300; margin-top: 0.5rem; color: var(--color-text-muted);"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="section section-light" style="text-align: center;">
+    <div class="container" style="max-width: 600px;">
+      <span class="section-subtitle">Collaborate With Us</span>
+      <h2 class="section-title">Like our aesthetic?</h2>
+      <p style="margin-bottom: 2rem; color: var(--color-text-muted);">Let's discuss how we can apply our signature warm-minimalist styling to your home or office space.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Project Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>VIBE<span>STUDIO</span></h3>
+          <p>Bespoke interior design specializing in warm minimalism and luxury Japandi aesthetics.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Residential</a></li>
+            <li><a href="services.html">Commercial</a></li>
+            <li><a href="services.html">Consultation</a></li>
+            <li><a href="services.html">Turnkey Renovation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <div class="footer-contact">
+            <p>Email <span>hello@vibestudio.co</span></p>
+            <p>Call / WhatsApp <span>+60 12-345 6789</span></p>
+            <p>Office <span>A-12-03, Menara Kiara, Mont Kiara, 50480 Kuala Lumpur</span></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vibe Studio. All rights reserved. Designed by Danial's Web &amp; Systems.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/60123456789" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <div class="whatsapp-icon-wrapper">
+      <svg class="whatsapp-icon" viewBox="0 0 24 24">
+        <path d="M12.012 2C6.48 2 2 6.48 2 12.012c0 1.767.46 3.427 1.258 4.887L2 22l5.244-1.378a9.954 9.954 0 0 0 4.768 1.21c5.532 0 10.012-4.48 10.012-10.012S17.544 2 12.012 2zm6.273 14.3c-.258.728-1.282 1.332-1.782 1.4-1.378.188-3.118-.332-5.187-2.186-2.585-2.316-4.225-5.068-4.225-6.853 0-.853.454-1.42.79-1.77.258-.266.52-.352.753-.352.224 0 .428.01.614.019.2.01.467-.076.732.558.266.643.918 2.24.996 2.4.078.16.13.348.026.558-.104.21-.156.34-.312.522-.156.182-.328.406-.468.544-.156.15-.32.314-.138.625.182.308.808 1.33 1.734 2.156.926.826 1.706 1.08 2.012 1.204.306.124.484.104.664-.1.182-.204.79-.918.996-1.232.204-.314.41-.262.69-.156.28.106 1.78.84 2.088.994.308.154.514.23.586.352.072.124.072.716-.186 1.442z"/>
+      </svg>
+      <div class="whatsapp-badge"></div>
+    </div>
+    <span class="whatsapp-text">Consult via WhatsApp</span>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
